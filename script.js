@@ -100,6 +100,8 @@ const displayMovements = function (acc, sort = false) {
   const movs = sort
     ? acc.movements.slice().sort((a, b) => a - b)
     : acc.movements;
+
+  // change sort btn text by click
   sort
     ? (btnSort.textContent = "ترتیب (مبلغ)")
     : (btnSort.textContent = "ترتیب (تاریخ)");
@@ -224,9 +226,13 @@ btnLogin.addEventListener("click", function (e) {
   // prevent form from submitting
   e.preventDefault();
 
-  currentAccount = accounts.find(
-    (account) => account.username === inputLoginUsername.value
-  );
+  if (
+    accounts.some((account) => account.username === inputLoginUsername.value)
+  ) {
+    currentAccount = accounts.find(
+      (account) => account.username === inputLoginUsername.value
+    );
+  }
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     // hide accounts table
