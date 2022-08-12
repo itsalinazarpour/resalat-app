@@ -1,0 +1,126 @@
+@media screen and (max-width:1035px) {
+    html {
+        font-size: 55%;
+    }
+
+    .balance__value {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+
+
+    body {
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(6, 12rem) auto;
+        gap: 1rem;
+    }
+
+    .balance {
+        grid-column: 1 / span 1;
+        justify-content: center;
+    }
+
+    .movements {
+        grid-row: 2 / span 3;
+        grid-column: 1/ span 1;
+    }
+
+    .summary {
+        grid-row: 8 / span 1;
+        grid-column: 1 / span 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .operation {
+        padding: 1rem 1.5rem;
+    }
+
+    .form__input {
+        justify-self: center;
+        max-width: 250px;
+    }
+
+    .balance__value {
+        font-size: 2.5rem;
+        align-self: flex-start;
+    }
+
+    .balance div {
+        margin-left: 1rem;
+    }
+
+    p.summary__value {
+        margin-bottom: 1rem;
+    }
+
+    .movements__row {
+        padding: 1.25rem 1rem;
+    }
+
+    .movements__type {
+        padding: 0.1rem 1rem;
+        margin-left: 1rem;
+        padding-bottom: 2px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a, .login {
+        order: -1;
+    }
+
+    .logo {
+        height: 6.25rem;
+    }
+
+    .welcome {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .login__input {
+        padding: 0.2rem 1rem;
+        font-size: 1.3rem;
+        width: 10rem;
+    }
+
+    table td {
+        padding: 7px;
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .btn--sort:hover,
+    .btn--sort:focus {
+        color: initial;
+    }
+
+    .login__btn:hover,
+    .login__btn:focus {
+        color: inherit;
+    }
+
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+    table {
+        transform: translate(-50%, 0);
+        top: 140px;
+    }
+}

@@ -241,7 +241,11 @@ nav {
   font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
+  background: rgba(245, 222, 179, 0.667);
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
 }
+
 
 /* OPERATIONS */
 .operation {
@@ -365,17 +369,18 @@ table {
   min-width: 60%;
   /* opacity: 0; */
   transition: all 1s;
+
 }
 
 table td {
   padding: 15px;
+  font-size: 2rem;
 }
 
 table thead td {
   background-color: #13467c;
   color: #ffffff;
   font-weight: bold;
-  font-size: 2rem;
 }
 
 table thead td:last-child {
@@ -389,7 +394,6 @@ table thead td:first-child {
 table tbody td {
   color: #636363;
   border: 1px solid #dddfe1;
-  font-size: 2rem;
 }
 
 table tbody tr {
