@@ -16,6 +16,7 @@
 * calculate summary
 * display movements
 * logout timer
-* transfer money & ...
+* transfer money 
+* and ...
 
 ### ✔ Fully responsive
